@@ -1,0 +1,231 @@
+/* Admin style css */
+
+.lc-admin-tab-link ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #595959;
+  color: #fff;
+}
+
+.lc-admin-tab-link li {
+  float: left;
+  background-color: #595959;
+  color: #fff;
+  border-right:1px solid #4CA1AF;
+  margin: 3px;
+}
+
+.lc-admin-tab-link li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.lc-admin-tab-link li a:hover:not(.lc_active) {
+  background-color: #4CA1AF;
+}
+
+.lc_active {
+  background-color: #4CA1AF;
+  color: #fff;
+}
+
+
+
+.lcbody{ padding-top: 20px; margin-top:5%; border:1px solid #d9d9d9; width: 97%; min-height: 350px; height: auto; overflow: auto; }
+
+/*#lc_template_id{
+	margin: 10px;
+}*/
+
+#lc-tab-status{
+	padding: 20px;
+}
+
+#lc-tab-template{
+	padding: 20px;
+}
+
+.lc_high{
+	color: #2f626a;
+	border: solid 2px;
+	padding: 5px;
+	text-align: center;
+  margin-bottom: 30px;
+}
+
+/*.lc-onoff*/
+
+
+/* The container */
+.lc-onoff label{
+  float: left;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  float: left;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 16px;
+  width: 16px;
+  background-color: #2f626a;
+  border-radius: 10%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2f626a;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ 	top: 4px;
+	left: 4px;
+	width: 8px;
+	height: 8px;
+	border-radius: 10%;
+	background: white;
+}
+
+.lc-det{
+  margin-top: 10%;
+}
+
+.lc-url {
+background-color:#2f626a;
+width: auto;
+height: 20px;
+margin: 5px;
+text-align: center;
+padding: 5px;
+/*position:absolute;*/
+-webkit-box-shadow: 0px 0px 2px 1px rgba(148,148,148,1);
+-moz-box-shadow: 0px 0px 2px 1px rgba(148,148,148,1);
+box-shadow: 0px 0px 2px 1px rgba(148,148,148,1);
+}
+
+.view_lc_url{
+  text-align: center;
+  margin-left: 20%;
+  padding: 5px;
+  color: #fff;
+}
+
+.view_lc_url_1{
+  text-align: center;
+}
+
+.view_lc_disable{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.lccopy_button {
+  background-color: #4CA1AF; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.lccopy_button:hover {
+  background-color: #fff; /* Green */
+  border: none;
+  color: #4CA1AF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+/* HIDE RADIO */
+.tem_radio { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+.tem_radio + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+.tem_radio:checked + img {
+  outline: 2px solid #4CA1AF;
+}
+
+.temp_lc_img
+{
+  height: 200px;
+  width: 200px;
+}
+
+.lc_temp_name
+{
+  margin: 10px;
+  text-align: center;
+}
+
+#lc-tab-template label {
+    vertical-align: middle;
+    float: left;
+    margin: 10px;
+}
+
+.save_temp_btn{
+  margin-top: 50%;
+}
+
+.lcbody-help
+{
+  padding: 0 15px 5px 15px;
+}
